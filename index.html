@@ -7,6 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <i class="fa-solid fa-sun"></i> -->
+    <!-- <i class="fa-solid fa-moon"></i> -->
+
+    <header>
+        <nav>
+        <h1>Digital Clock</h1>
+        <div class="nav-right">
+        <div class="theme">
+            <i id="day" class="fa-solid fa-sun"></i>
+            <i id="night" class="fa-solid fa-moon"></i>
+        </div>
+        <button class="audioBtn btn theme">Play Audio</button>
+        </div>
+    <audio id="tickSound" src="/audios/clockTicking.mp3" loop></audio>
+
+        </nav>
+    </header>
+
     <div id="container">
         <div id="box">
             <h2 class="day"></h2>
