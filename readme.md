@@ -47,10 +47,10 @@ This project helped me focus on **readability**, **modularity**, and **interacti
 
 ## 📁 Folder Structure
 
-📦 digital-clock
-├── index.html
-├── style.css
-├── script.ts
+📦 digital-clock <br>
+├── index.html <br>
+├── style.css <br>
+├── script.ts <br>
 ├── /audios/clockTicking.mp3
 
 ---
