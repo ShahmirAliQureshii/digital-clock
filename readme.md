@@ -51,7 +51,7 @@ This project helped me focus on **readability**, **modularity**, and **interacti
 ├── index.html <br>
 ├── style.css <br>
 ├── script.ts <br>
-├── /audios/clockTicking.mp3
+├── /audios/clockTicking.mp3 <br>
 ├── imgs <br>
      ├── lightTheme.png <br>
      ├── darkTheme.png <br>
