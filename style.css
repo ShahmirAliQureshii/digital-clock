@@ -18,12 +18,14 @@ body,html {
     height: 100%;
     color: #000; /* Black text */
 }
+/* Header */
 header {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
 }
+/* Header > Nav */
 nav {
     display: flex;
     align-items: center;
@@ -33,15 +35,59 @@ nav {
     padding: 20px 80px;
     border-bottom: 2px solid gray;
 }
+/* Header > h1 */
+header h1 {
+    font-size: 3vmin;
+    cursor: pointer;
+}
+/* Nav > Nav Right */
 .nav-right {
     display: flex;
     gap: 10px;
 }
-header h1 {
-    font-size: 4vmin;
+/* Nav Right > Theme */
+.theme {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20px;
+    width: 70px;
+    padding: 15px 30px;
+    border-radius: 15px;
+    background-color: #dfdfdf;
+    color: #000;
+    outline: none;
+    border: none;
     cursor: pointer;
+    transition: all 0.6s ease-in-out;
 }
+/* Theme > Hover?? */
+.theme:hover {
+    background-color: #000;
+    color: white;
+    border: 1px solid white;
 
+}
+/* Theme > Night */
+#night {
+    display: none;
+}
+/* Theme > Hover > Day ??? */
+.theme:hover #day {
+    display: none;
+}
+/* Theme > Hover > NIght ??? */
+.theme:hover #night {
+    display: block;
+    color: white;
+}
+/* Nav-Right > Button */
+.btn {
+    width: 120px;
+    font-weight: bold;
+    font-size: 9px;
+}
+/* Container */
 #container {
     height: 100%;
     width: 100%;
@@ -50,6 +96,7 @@ header h1 {
     justify-content: center;
     background-color: #fff;
 }
+/* Container > Box */
 #box {
     display: flex;
     align-items: center;
@@ -65,85 +112,64 @@ header h1 {
     padding: 20px;
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.90); /* soft gray shadow */
 }
-#top {
-    display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    justify-content: center;
-    /* background-color: yellow; */
-    gap: 20px;
-    width: 70%;
-    font-size: 8vmin;
-}
+/* Box > Day(h2) */
 .day {
     font-size: 5vmin;
     font-weight: 500;
 }
+/* Box > Top */
+#top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 70%;
+    font-size: 8vmin;
+}
+/* Top > Top-Right */
 #top-right {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     flex-direction: column;
 }
+/* Top-Right > Top-Right-Top */
 #top-right-top {
     display: flex;
     flex-direction: row;
     gap: 20px;
     font-size: 6vmin;
 }
+/* Top-Right > Top-Right-Bottom */
 #top-right-bottom {
     display: flex;
-    /* align-items: flex-end; */
-    /* justify-content: flex-end; */
     gap: 5px;
     font-size: 2vmin;
-    /* flex-direction: row; */
     margin-top: -5vmin;
     margin-left: 8vmin;
 }
+/* Top-Right-Bottom > Shift(h1) */
 .shift {
     color: yellow;
 }
+/* Container > Bottom */
 #bottom {
     display: flex;
     gap: 7px;
 }
-#night {
-    display: none;
-}
-.theme {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 20px;
-    width: 70px;
-    padding: 15px 30px;
-    border-radius: 15px;
-    background-color: #dfdfdf;
-    color: #000;
-    /* color: rgb(255, 149, 0); */
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: all 0.6s ease-in-out;
-}
-.theme:hover {
-    background-color: #000;
-    color: white;
-    border: 1px solid white;
 
-}
-.theme:hover #day {
-    display: none;
-}
-.theme:hover #night {
-    display: block;
-    color: white;
-}
-
-.btn {
-    width: 120px;
-    font-weight: bold;
-    /* background-color: red; */
-    font-size: 9px;
+/* Responsive */
+@media (max-width: 650px ) {
+    nav {
+        width: 90%;
+        padding: 20px 25px;
+    }
+    header h1 {
+        font-size: 2.5vmin;
+    } 
+    .btn, .theme {
+        width: 15vw;
+        font-size: 1.7vmin;
+        height: 10px;
+        padding: 2.5vmin 1vmin;
+    }
 }
